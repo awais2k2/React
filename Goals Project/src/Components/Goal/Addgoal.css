@@ -1,0 +1,10 @@
+.goal-box {
+  width: 40%;
+  padding: 5px 10px;
+  margin: 15px auto;
+  background-color: #8b005d;
+}
+.goal-text {
+  font-size: 18px;
+  color: white;
+}
