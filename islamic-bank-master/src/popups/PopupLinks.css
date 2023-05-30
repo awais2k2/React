@@ -1,0 +1,57 @@
+.PopupLinks {
+  position: fixed;
+  background-color: var(--color-primary);
+  height: 100vh;
+  width: 50%;
+  z-index: 100;
+  font-size: 2.5rem;
+  color: var(--color-white);
+  /* transition: all 0.5s; */
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+}
+.PopupLinks-container {
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  z-index: 101;
+  text-align: center;
+}
+.PopupLink {
+  padding: 1rem 0;
+  border-bottom: 1px solid white;
+  width: 25rem;
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    var(--color-white) 50%
+  );
+  background-size: 220%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.PopupLink:hover {
+  background-position: 100%;
+  color: var(--color-primary);
+}
+
+.Popup-close {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+@media screen and (max-width: 470px) {
+  .PopupLinks {
+    font-size: 2rem;
+  }
+  .PopupLink {
+    padding: 1rem 0;
+    width: 16rem;
+  }
+}

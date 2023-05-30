@@ -1,0 +1,70 @@
+:root {
+  --color-primary: #006b38ff;
+  /* --color-primary: #422057ff; */
+  /* --color-primary: #f65058ff; */
+  /* --color-primary: #df6589ff; */
+  /* --color-primary: #669db3ff; */
+  /* --color-primary: #00539cff; */
+
+  --color-primary-overlay: rgba(0, 107, 55, 0.8);
+  /* --color-primary-overlay: rgba(66, 32, 87, 0.8); */
+  /* --color-primary-overlay: rgba(246, 80, 88, 0.8); */
+  /* --color-primary-overlay: rgba(223, 101, 138, 0.8); */
+  /* --color-primary-overlay: rgba(102, 157, 179, 0.8); */
+  /* --color-primary-overlay: rgba(0, 83, 156, 0.8); */
+
+  /* --color-primary-overlay: rgba(3, 3, 3, 0.8); */
+  /* --color-primary-overlay: rgba(28, 28, 27, 0.8); */
+
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(0, 0, 0);
+  --color-border: rgb(112, 112, 112);
+  --color-icon: #f65058ff;
+  /* --color-icon: #422057ff; */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", -apple-system, sans-serif;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media screen and (max-width: 940px) {
+  html {
+    font-size: 59.25%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 52.25%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 45%;
+  }
+}

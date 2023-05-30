@@ -1,0 +1,116 @@
+.AccountMethods {
+  margin: 0 10rem 1rem 10rem;
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: bold;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.452);
+}
+
+.AccountMethods li {
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+}
+.line {
+  width: 2px;
+  height: 6rem;
+  background-color: var(--color-border);
+}
+.AccountMethods-icons {
+  font-size: 3rem;
+  transition: all 0.5s;
+  color: var(--color-icon);
+}
+
+.AccountMethods li:hover .AccountMethods-icons {
+  color: var(--color-primary);
+}
+
+.AccountMethods li:active {
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 1080px) {
+  .AccountMethods {
+    margin: 0 8rem 1rem 8rem;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .AccountMethods {
+    margin: 0 7rem 1rem 7rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .AccountMethods {
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  .AccountMethods li {
+    width: 25%;
+    padding-bottom: 1rem;
+  }
+  .line {
+    width: 2px;
+    margin-top: 0.8rem;
+    height: 5.2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .AccountMethods {
+    margin: 0 6rem 1rem 6rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .AccountMethods {
+    margin: 0 5rem 1rem 5rem;
+  }
+  .AccountMethods li {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .AccountMethods {
+    margin: 0 1rem 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .AccountMethods {
+    margin: 0 1.5rem 1rem 1.5rem;
+  }
+  .AccountMethods li {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .icon-gmail {
+    margin-top: 2px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .AccountMethods {
+    margin: 0 1rem 1rem 1rem;
+  }
+  .AccountMethods li {
+    width: 32%;
+    font-size: 1.4rem;
+  }
+  .AccountMethods {
+    padding: 0.5rem;
+  }
+}

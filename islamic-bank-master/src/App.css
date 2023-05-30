@@ -1,0 +1,57 @@
+button:focus {
+  outline: 0;
+}
+input:focus {
+  outline: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hide {
+  visibility: hidden !important;
+}
+
+.close-btn {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+.close-btn:hover {
+  transform: scale(1.5);
+}
+.close-btn:active {
+  transform: scale(1.1);
+}
+
+@keyframes openPopup {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes toToBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-30rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

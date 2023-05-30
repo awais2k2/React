@@ -1,0 +1,196 @@
+.Header-Body {
+  background-image: linear-gradient(
+      to right bottom,
+      var(--color-primary-overlay),
+      var(--color-primary-overlay)
+    ),
+    url("../assests/imgs/main-img.jpg");
+  height: 90vh;
+  padding: 0 10rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.HeaderBody-media {
+  margin: 0 10rem;
+  animation-name: toToBottom;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  height: 70vh;
+}
+
+.Header-Body-container {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-white);
+}
+.Header-Body--head {
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 2rem;
+  font-weight: 900;
+}
+.Header-Body--para {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+}
+
+.Header-Body-btn--container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.Header-Body-btn {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary--overlay);
+  text-transform: uppercase;
+  margin-right: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 1.3rem;
+}
+
+.Header-btn-login {
+  padding: 1rem 3rem;
+}
+.Header-btn-create {
+  padding: 1rem 1.5rem;
+}
+
+.Header-Body-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.212);
+}
+
+.Header-Body-btn:active {
+  transform: scale(1);
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.212);
+}
+
+@media screen and (max-width: 1080px) {
+  .Header-Body {
+    padding: 0 8rem;
+  }
+  .HeaderBody-media {
+    margin: 0 8rem;
+  }
+  .Header-Body--head {
+    font-size: 4rem;
+    letter-spacing: 1.5rem;
+  }
+  .Header-Body--para {
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .Header-Body {
+    padding: 0 7rem;
+  }
+  .HeaderBody-media {
+    margin: 0 7rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .Header-Body--head {
+    font-size: 3.3rem;
+    letter-spacing: 1.5rem;
+  }
+  .Header-Body--para {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Header-Body {
+    padding: 0 6rem;
+  }
+  .HeaderBody-media {
+    margin: 0 6rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .Header-Body {
+    padding: 0 5rem;
+  }
+  .HeaderBody-media {
+    margin: 0 5rem;
+  }
+  .Header-Body--head {
+    font-size: 3.5rem;
+    letter-spacing: 1.2rem;
+  }
+  .Header-Body--para {
+    font-size: 1.42rem;
+  }
+
+  .Header-Body-btn--container {
+    margin-top: 1.5rem;
+  }
+
+  .Header-btn-login {
+    padding: 1rem 2.5rem;
+  }
+  .Header-btn-create {
+    padding: 1rem 1.2rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .Header-Body {
+    padding: 0 1rem;
+  }
+  .HeaderBody-media {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .Header-Body {
+    padding: 0 1.5rem;
+  }
+  .HeaderBody-media {
+    margin: 0 1.5rem;
+  }
+  .Header-btn-login {
+    padding: 1rem 2rem;
+  }
+  .Header-btn-create {
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .Header-Body {
+    padding: 0 1rem;
+  }
+  .HeaderBody-media {
+    margin: 0 1rem;
+  }
+  .Header-btn-login {
+    padding: 0.7rem 1.2rem;
+  }
+  .Header-btn-create {
+    padding: 0.7rem 1.5rem;
+  }
+  .Header-Body-btn {
+    font-size: 1.1rem;
+  }
+  .Header-btn-login {
+    padding: 1rem 2rem;
+  }
+  .Header-btn-create {
+    padding: 1rem 1rem;
+  }
+}

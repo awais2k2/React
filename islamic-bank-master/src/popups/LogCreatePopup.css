@@ -1,0 +1,136 @@
+.LoginPopup,
+.CreatePopup {
+  background-color: white;
+  border-radius: 1rem;
+  color: var(--color-primary);
+  position: relative;
+  animation-name: openPopup;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+}
+
+.LoginPopup-btn-close,
+.CreatePopup-btn-close {
+  font-size: 2rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+.LoginPopup-head,
+.CreatePopup-head {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+
+.LoginPopup-field label,
+.CreatePopup-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.LoginPopup-field input,
+.CreatePopup-field input {
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  border: 2px solid var(--color-primary);
+  border-radius: 7px;
+  color: var(--color-primary);
+  width: 100%;
+}
+
+.LoginPopup-field input::placeholder,
+.CreatePopup-field input::placeholder {
+  color: var(--color-primary);
+}
+.LoginPopup-field input[type="password"]::placeholder,
+.CreatePopup-field input[type="password"]::placeholder {
+  font-size: 1rem;
+}
+
+.LoginPopup-btn,
+.CreatePopup-btn {
+  padding: 1rem 1.5rem;
+  border-radius: 7px;
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-primary);
+  width: 100%;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.LoginPopup-btn:active,
+.CreatePopup-btn:active {
+  transform: scale(0.95);
+}
+
+.LoginPopup-create,
+.CreatePopup-login {
+  color: black;
+  margin: 1.5rem 0;
+  font-size: 1.6rem;
+}
+
+.create-account,
+.login-account {
+  color: var(--color-primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.error-msg {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+  color: red;
+}
+.Login-error {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: red;
+}
+
+.LoginPopup {
+  padding: 3rem 3rem;
+}
+
+.LoginPopup-head {
+  margin-bottom: 3rem;
+}
+
+.LoginPopup-field {
+  margin-bottom: 1.5rem;
+}
+
+.LoginPopup-field label {
+  margin-bottom: 5px;
+}
+.CreatePopup {
+  padding: 3rem 3rem;
+}
+
+.CreatePopup-head {
+  margin-bottom: 2rem;
+}
+.CreatePopup-field {
+  margin-bottom: 5px;
+}
+
+.CreatePopup-field label {
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width: 430px) {
+  .CreatePopup {
+    background-color: white;
+    padding: 2rem 2rem;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .CreatePopup {
+    width: 90%;
+  }
+}
